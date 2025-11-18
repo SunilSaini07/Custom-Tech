@@ -165,13 +165,13 @@ const Home = () => {
                 Custom web and mobile applications designed to scale, perform,
                 and deliver measurable business impact.
               </p>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-block px-10 py-4 text-lg font-semibold rounded-full shadow-lg transition duration-500 transform hover:scale-105
                        bg-linear-to-r from-cyan-500 to-purple-600 text-white hover:shadow-cyan-500/50"
               >
                 Start Your Project
-              </a>
+              </Link>
             </div>
 
             {/* Existing Blur Glow Background */}
@@ -417,7 +417,7 @@ const Home = () => {
     </p>
 
     <a
-      href="#"
+      href=""
       className="cta-btn particle-btn inline-block px-10 py-4 text-lg font-semibold rounded-full shadow-lg bg-linear-to-r from-cyan-500 to-purple-600 text-white relative overflow-hidden group"
     >
       <span className="relative z-10">Request a Consultation</span>
