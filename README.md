@@ -13,7 +13,7 @@ It provides a solid starting point for building fast and visually appealing fron
 
 🎯 **Goal:** Create a scalable and optimized starter template for modern web development.
 
-🔗 **Live Demo:** [Click here](https://custom-tech-chi.vercel.app/)
+🔗 **Live Demo:** [Click here](https://custom-tech-lab.vercel.app/)
 
 ---
 
