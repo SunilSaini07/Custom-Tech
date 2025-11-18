@@ -1,16 +1,51 @@
-# React + Vite
+# 🌟 CustomTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Overview
+**CustomTechLabs** is a modern web application built using **Vite**, **React**, and **Tailwind CSS**.  
+It provides a solid starting point for building fast and visually appealing front-end applications.
 
-## React Compiler
+🎯 **Goal:** Create a scalable and optimized starter template for modern web development.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live Demo:** [Click here](https://custom-tech-chi.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack & ✨ Features
+- ⚡ **Vite** – Fast development and optimized builds  
+- ⚛️ **React** – Modular and reusable UI components  
+- 🎨 **Tailwind CSS** – Utility-first styling for rapid UI design  
+- 🛡️ **ESLint** – Code quality and consistency  
+- ☁️ **Vercel** – Smooth deployment workflow  
+- 🤖 **AI Guidance** – Assisted in project deveploment and improvements  
+
+---
+
+
+### 📥 Installation
+
+1. Clone the repository :- 
+   ```sh
+   git clone https://github.com/SunilSaini07/CustomTech.git
+   cd CustomTech
+
+2. Install dependencies :-
+   ```sh
+   npm install
+
+3. Start the development server :-
+   ```sh
+   npm run dev
+
+   
+--- 
+
+  **🧑‍💼 Develop By : Sunil Saini [ SunilSaini07 ]** 
+  
+---
