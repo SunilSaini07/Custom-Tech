@@ -325,3 +325,27 @@
 .cta-animate[style*="animation-delay"] {
   animation-delay: inherit;
 }
+
+.bubble {
+  position: absolute !important;
+  border-radius: 9999px;
+  opacity: 0.55;
+  animation: bubbleFloat 14s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-60px) translateX(20px);
+  }
+  100% {
+    transform: translateY(-200) translateX(0);
+  }
+}
+
+
+

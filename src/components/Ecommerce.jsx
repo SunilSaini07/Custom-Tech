@@ -51,7 +51,7 @@ const EcommerceService = () => {
       />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gray-50 border-b border-gray-200 pt-36 pb-28 animate-bg-cycle">
+      <section className="relative overflow-hidden bg-gray-50 border-b border-gray-200 pt-36 pb-28 animate-bg-cycle z-100">
         {/* animated corporate + startup blend */}
         <div className="absolute inset-0 opacity-40 pointer-events-none select-none">
           {/* blob 1 */}
@@ -155,6 +155,28 @@ const EcommerceService = () => {
 
       {/* CORE FEATURES */}
       <section className="py-24 bg-white relative">
+        {/* floating bubbles bg */}
+        <div className="absolute inset-0 overflow-visible pointer-events-none z-0">
+          {[...Array(14)].map((_, i) => (
+            <div
+              key={i}
+              className="bubble blur-[2px] "
+              style={{
+                width: i % 3 === 0 ? 55 : i % 3 === 1 ? 26 : 36,
+                height: i % 3 === 0 ? 55 : i % 3 === 1 ? 26 : 36,
+                left: `${Math.random() * 90}%`,
+                top: `${Math.random() * 85}%`,
+                background:
+                  i % 2 === 0
+                    ? "rgba(56,189,248,0.45)"
+                    : "rgba(139,92,246,0.40)",
+                animationDelay: `${i * 0.4}s`,
+                animationDuration: `${12 + i * 0.5}s`,
+              }}
+            />
+          ))}
+        </div>
+
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-14">
             Core <GradientText>Features</GradientText>
@@ -175,7 +197,7 @@ const EcommerceService = () => {
                 <div
                   key={item}
                   ref={ref}
-                  className="scroll-fade-up p-8 bg-gray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  className="scroll-fade-up p-8 bg-gray-50/10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                   style={{ animationDelay: `${index * 120}ms` }}
                 >
                   <h3 className="text-xl font-semibold mb-2">{item}</h3>
@@ -188,6 +210,28 @@ const EcommerceService = () => {
 
       {/* ADVANCED MODULES */}
       <section className="py-24 bg-gray-50 border-t border-gray-200 relative">
+        {/* floating bubbles bg */}
+        <div className="absolute inset-0 overflow-visible pointer-events-none z-0">
+          {[...Array(14)].map((_, i) => (
+            <div
+              key={i}
+              className="bubble blur-[2px]"
+              style={{
+                width: i % 3 === 0 ? 55 : i % 3 === 1 ? 26 : 36,
+                height: i % 3 === 0 ? 55 : i % 3 === 1 ? 26 : 36,
+                left: `${Math.random() * 90}%`,
+                top: `${Math.random() * 100}%`,
+                background:
+                  i % 2 === 0
+                    ? "rgba(56,189,248,0.45)"
+                    : "rgba(139,92,246,0.40)",
+                animationDelay: `${i * 0.4}s`,
+                animationDuration: `${12 + i * 0.5}s`,
+              }}
+            />
+          ))}
+        </div>
+
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-14">
             Advanced <GradientText>Modules</GradientText>
@@ -208,7 +252,7 @@ const EcommerceService = () => {
                 <div
                   key={item}
                   ref={ref}
-                  className="scroll-fade-up p-8 bg-gray-50 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  className="scroll-fade-up p-8 bg-gray-50/10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                   style={{ animationDelay: `${index * 120}ms` }}
                 >
                   <h3 className="text-xl font-semibold mb-2">{item}</h3>
@@ -219,59 +263,65 @@ const EcommerceService = () => {
         </div>
       </section>
 
-    {/* CTA */}
-<section className="py-28 bg-linear-to-r from-gray-50 via-white to-gray-100 text-center relative overflow-hidden">
+      {/* CTA */}
+      <section className="py-28 bg-linear-to-r from-gray-50 via-white to-gray-100 text-center relative overflow-hidden">
+        {/* animated blobs */}
+        <div className="absolute inset-0 pointer-events-none select-none opacity-25">
+          <div className="w-80 h-80 bg-cyan-300 rounded-full blur-3xl absolute top-10 left-1/2 -translate-x-1/2 animate-ping"></div>
+          <div className="w-72 h-72 bg-purple-400 rounded-full blur-3xl absolute bottom-0 right-1/3 animate-ping delay-500"></div>
+        </div>
 
-  {/* animated blobs */}
-  <div className="absolute inset-0 pointer-events-none select-none opacity-25">
-    <div className="w-80 h-80 bg-cyan-300 rounded-full blur-3xl absolute top-10 left-1/2 -translate-x-1/2 animate-ping"></div>
-    <div className="w-72 h-72 bg-purple-400 rounded-full blur-3xl absolute bottom-0 right-1/3 animate-ping delay-500"></div>
-  </div>
+        <div className="relative z-10 max-w-3xl mx-auto px-6">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-snug cta-animate">
+            Built to Scale. Built for <GradientText>Your Business</GradientText>
+          </h2>
 
-  <div className="relative z-10 max-w-3xl mx-auto px-6">
-    <h2
-      className="text-4xl sm:text-5xl font-bold mb-6 leading-snug cta-animate"
-    >
-      Built to Scale. Built for <GradientText>Your Business</GradientText>
-    </h2>
+          <p
+            className="text-lg text-gray-600 mb-10 leading-relaxed cta-animate"
+            style={{ animationDelay: "200ms" }}
+          >
+            Let’s build a commerce platform that grows with your brand.
+          </p>
 
-    <p
-      className="text-lg text-gray-600 mb-10 leading-relaxed cta-animate"
-      style={{ animationDelay: "200ms" }}
-    >
-      Let’s build a commerce platform that grows with your brand.
-    </p>
-
-    <Link
-  to="/contact"
-  className="px-10 py-4 text-lg font-semibold rounded-full bg-linear-to-r from-cyan-500 to-purple-600 text-white shadow-md
+          <Link
+            to="/contact"
+            className="px-10 py-4 text-lg font-semibold rounded-full bg-linear-to-r from-cyan-500 to-purple-600 text-white shadow-md
              hover:scale-[1.07] transition-transform hover-scale"
-  style={{ animationDelay: "350ms" }}
->
-  Start Your Project
-</Link>
+            style={{ animationDelay: "350ms" }}
+          >
+            Start Your Project
+          </Link>
+        </div>
+      </section>
 
-  </div>
-</section>
-
-
-        {/* Footer */}
+      {/* Footer */}
       <footer className="footer-animate py-8 bg-gray-50 border-t border-gray-200 relative overflow-hidden">
         <div className="footer-glow pointer-events-none absolute inset-0"></div>
-      
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-footer">
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 text-gray-500 mb-4">
-            <Link to="/" className="footer-link">Home</Link>
-            <Link to="/industries" className="footer-link">Industries</Link>
-            <Link to="/services" className="footer-link">Services</Link>
-            <Link to="/solutions" className="footer-link">Solutions</Link>
-            <Link to="/contact" className="footer-link">Contact</Link>
+            <Link to="/" className="footer-link">
+              Home
+            </Link>
+            <Link to="/industries" className="footer-link">
+              Industries
+            </Link>
+            <Link to="/services" className="footer-link">
+              Services
+            </Link>
+            <Link to="/solutions" className="footer-link">
+              Solutions
+            </Link>
+            <Link to="/contact" className="footer-link">
+              Contact
+            </Link>
           </div>
-      
+
           <p className="text-gray-500 text-sm opacity-90 hover:opacity-100 transition">
-            &copy; {new Date().getFullYear()} Custom Tech Lab. All rights reserved.
+            &copy; {new Date().getFullYear()} Custom Tech Lab. All rights
+            reserved.
           </p>
-      
+
           <p className="text-gray-600 text-xs mt-1 tracking-wide opacity-80 hover:opacity-100 transition">
             Roots. Future. Evolution. | CustomTechCT USA.
           </p>

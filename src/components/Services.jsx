@@ -201,7 +201,7 @@ document.querySelectorAll(".magnetic-btn").forEach((btn) => {
     {services.map((service, i) => (
       <div
         key={service.title}
-        className={`serviceCard opacity-0 translate-y-6 group relative rounded-2xl border border-gray-100 bg-linear-to-r ${service.gradient} p-8 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-700`}
+        className={`serviceCard opacity-0 translate-y-6 group relative rounded-2xl border border-gray-100 bg-linear-to-r ${service.gradient}/20 p-8 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-700`}
       >
         <div className="absolute -top-5 -right-5 w-24 h-24 bg-linear-to-r from-cyan-400 to-purple-500 rounded-full blur-3xl opacity-80 group-hover:opacity-50 transition-opacity"></div>
         <h2 className="text-2xl font-bold mb-3">{service.title}</h2>
@@ -227,7 +227,7 @@ document.querySelectorAll(".magnetic-btn").forEach((btn) => {
 
     {/* Animated Highlight Card */}
     <div className="serviceCard opacity-0 translate-y-6 relative rounded-2xl border-cyan-300 overflow-hidden p-8 flex flex-col justify-center items-center text-center bg-linear-to-r from-cyan-500 via-purple-500 to-blue-600 text-white shadow-xl animate-gradient-move hover:scale-[1.02] transition-all duration-500">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1),transparent_40%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1)/25,transparent_40%)]"></div>
       <h2 className="text-2xl font-bold mb-4">Advanced E-Commerce Development</h2>
       <p className="text-lg text-white/90 mb-6 max-w-sm">
        We design high-converting commerce experiences that blend performance, analytics and modern engagement.
