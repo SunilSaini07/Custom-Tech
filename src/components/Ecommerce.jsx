@@ -104,10 +104,11 @@ const EcommerceService = () => {
               animationTimingFunction: "ease-out",
             }}
           >
-            Enterprise-Grade{" "}
+            Advanced {" "}
             <span className="bg-clip-text text-transparent bg-linear-to-r from-cyan-400 via-blue-400 to-purple-500 font-extrabold">
-              E-Commerce
+              E-Commerce   
             </span>
+            <span> Development </span>
           </h1>
 
           <p
